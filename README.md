@@ -6,7 +6,7 @@ Webgo is simple in its form : you can set up a web server with a few lines, spec
 ##  Tutorial
 
 First of all, the needed package is `webgo/internal/server`  
-In order to set up your server, simply call `server.SetHost(<host>, <port>)`
+In order to set up your server, simply call `server.SetHost(<host>, <port>)`  
 The server is started up using the `server.Start()` function, which is blocking.  
 
 ### Specify reachable resources
