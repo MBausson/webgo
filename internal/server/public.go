@@ -22,11 +22,12 @@ func AddEndpoint(ep string, ru Resources.WebResource) {
 	endpoints = append(endpoints, &rru)
 }
 
-// Loads every file in a given directory
-// Directory : string; path to said directory
-// Recursive : bool; indicate wether or not every children directories should be loaded
+// AddDirectory
+// loads every file in a given directory
+// Directory : path to said directory
+// Recursive : indicate whether every children directories should be loaded, or simply the first children of given directory
 //
-//	Endpoints strings are formatted as '/<filename.ext>'
+//	Endpoints strings are transformed as '/<filename.ext>' or '/<previous_directories>/<filename.ext> if recursive is set to true
 func AddDirectory(dir string, recursive bool) {
 	//	Grab the desired file names (relative to 'dir' directory)
 	filenames := load_dirs(dir, "", recursive)

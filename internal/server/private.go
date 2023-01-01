@@ -157,7 +157,7 @@ func load_dirs(ogdir, curdir string, recursive bool) []string {
 
 	for _, e := range entries {
 		//	If the current entry is a directory
-		//	... and if we dont't want recursivity, skip this entry
+		//	... and if we don't want recursivity, skip this entry
 		if e.IsDir() {
 			if !recursive {
 				continue
